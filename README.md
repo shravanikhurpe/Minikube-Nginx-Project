@@ -4,7 +4,7 @@ Git Docker Kubernetes | Minikube Webserver Project
 1. Launch EC2 Instance - SSH to it.
 2. Install git and clone this repository
 ```
-git clone https://github.com/atulkamble/Minikube-Nginx-Project.git
+git clone https://github.com/shravanikhurpe/Minikube-Nginx-Project.git
 cd Minikube-Nginx-Project
 ```
 ```
@@ -16,9 +16,9 @@ nano index.html
 New-Item Dockerfile
 nano Dockerfile
 docker build -t my-nginx-image .
-docker tag my-nginx-image atuljkamble/my-nginx-image:latest
+docker tag my-nginx-image shravanikhurpe/my-nginx-image:latest
 sudo docker push atuljkamble/my-nginx-image:latest
-docker run -p 80:80 atuljkamble/my-nginx-image
+docker run -p 80:80 shravanikhurpe/my-nginx-image
 
 New-Item nginx-deployment.yaml
 nano nginx-deployment.yaml
