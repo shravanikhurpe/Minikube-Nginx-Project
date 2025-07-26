@@ -17,7 +17,7 @@ New-Item Dockerfile
 nano Dockerfile
 docker build -t my-nginx-image .
 docker tag my-nginx-image shravanikhurpe/my-nginx-image:latest
-sudo docker push atuljkamble/my-nginx-image:latest
+sudo docker push shravanikhurpe/my-nginx-image:latest
 docker run -p 80:80 shravanikhurpe/my-nginx-image
 
 New-Item nginx-deployment.yaml
